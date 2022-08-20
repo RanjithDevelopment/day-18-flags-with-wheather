@@ -1,5 +1,5 @@
 async function flagfromcountries() {
-  try {
+ 
     let res = await fetch("https://restcountries.com/v2/all");
     var result = await res.json();
     // console.log(result);
@@ -27,10 +27,7 @@ async function flagfromcountries() {
       a.append(div);
     }
     
-  }
-  catch (error) {
-    alert(error);
-  }
+ 
 }
 
 flagfromcountries();
